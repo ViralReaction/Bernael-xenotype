@@ -9,6 +9,7 @@
 	<iconPath>UI/XenoIconBernael</iconPath>
 	<inheritable>true</inheritable>
 	<genes>
+		<li>BX_Mastermind</li>
 		<li>BX_Grace_Galling</li>
 		<li>BX_Nihilism</li>
 		<li>BX_GracePendulum</li>
@@ -21,11 +22,10 @@
 		<li>BX_CurvedWings</li>
 		<li>BX_WitheredSoul</li>
 		<li>MeleeDamage_Weak</li>
-		<li>Sterile</li>
 		<li>BX_Skin_Withered</li>
+		<li>Sterile</li>
 		<li>Beard_NoBeardOnly</li>
 		<li>Hair_BaldOnly</li>
-		<li>PsychicAbility_Extreme</li>
 		<li>Aggression_DeadCalm</li>
 		<li>Neversleep</li>
 		<li>UVSensitivity_Mild</li>

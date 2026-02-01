@@ -10,7 +10,7 @@
     <iconPath>UI/Icons/Genes/DepravedHead</iconPath>
     <displayOrderInCategory>0</displayOrderInCategory>
     <displayCategory>Cosmetic</displayCategory>
-    <biostatCpx>0</biostatCpx>
+    <biostatCpx>1</biostatCpx>
     <forcedHeadTypes>
       <li>BX_Depraved</li>
     </forcedHeadTypes>
@@ -81,6 +81,8 @@
 		<description>Carriers of this gene emanate a dark halo</description>
 		<iconPath>UI/Icons/Genes/ProfaneHalo</iconPath>
 		<displayOrderInCategory>14</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
 		
 		<renderNodeProperties>
 			<li>
@@ -186,7 +188,7 @@
 		<description>gene that cause a person to experience pain if they are in an bad mood.</description>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
+		<biostatMet>2</biostatMet>
 		<displayOrderInCategory>438</displayOrderInCategory>
 		<iconPath>UI/Icons/Genes/CravedBody</iconPath>
 		<modExtensions>
@@ -252,7 +254,7 @@
 	<description>Reduced hunger rate by 50% when the pawn is in the dark. Hunger rate increased by 200% when standing in light.</description>
 	<geneClass>Bernael_Xenotype.Gene_Hediff</geneClass>
 	<biostatCpx>1</biostatCpx>
-	<biostatMet>0</biostatMet>
+	<biostatMet>1</biostatMet>
 	<displayOrderInCategory>438</displayOrderInCategory>
 	<iconPath>UI/Icons/Genes/Gene_Darkeater</iconPath>
 	<modExtensions>
@@ -269,8 +271,9 @@
 	<label>Hexmaster</label>
 	<description>The carrier of this gene has possessed Psylink since its appearance and has a second level in the branch of dark magic.</description>
 	<geneClass>Bernael_Xenotype.Gene_Hexmaster</geneClass>
-	<biostatCpx>1</biostatCpx>
+	<biostatCpx>4</biostatCpx>
 	<biostatMet>0</biostatMet>
+	<biostatArc>1</biostatArc>
 	<displayOrderInCategory>438</displayOrderInCategory>
 	<iconPath>UI/Icons/Genes/Gene_Darkeater</iconPath>
 </GeneDef>
@@ -281,7 +284,7 @@
 	<description>Carriers of this gene are much less likely to be recruited and change their ideology.</description>
 	<geneClass>Bernael_Xenotype.Gene_Nihilism</geneClass>
 	<biostatCpx>1</biostatCpx>
-	<biostatMet>0</biostatMet>
+	<biostatMet>2</biostatMet>
 	<displayOrderInCategory>438</displayOrderInCategory>
 	<iconPath>UI/Icons/Genes/Bernael_Gene_Nihilism</iconPath>
 	<statFactors>
@@ -295,7 +298,7 @@
 	<description>Carriers of this gene hate people who have used Grace.</description>
 	<geneClass>Gene</geneClass>
 	<biostatCpx>1</biostatCpx>
-	<biostatMet>0</biostatMet>
+	<biostatMet>1</biostatMet>
 	<displayOrderInCategory>438</displayOrderInCategory>
 	<iconPath>UI/Icons/Genes/Bernael_Gene_Nihilism</iconPath>
 </GeneDef>
@@ -306,7 +309,7 @@
 	<description>Carriers of this gene that transforms an angel into a fallen one (and vice versa) when they are deprived of Grace and suffering from a mental break.</description>
 	<geneClass>Bernael_Xenotype.Gene_Pendulum</geneClass>
 	<biostatCpx>1</biostatCpx>
-	<biostatMet>0</biostatMet>
+	<biostatMet>-1</biostatMet>
 	<displayOrderInCategory>438</displayOrderInCategory>
 	<iconPath>UI/Icons/Genes/Bernael_Gene_Nihilism</iconPath>
 </GeneDef>
@@ -317,9 +320,47 @@
 	<description>Carriers of this gene speak in a dark, ancient language. Creatures without this gene will feel uneasy when interacted with.</description>
 	<geneClass>Gene</geneClass>
 	<biostatCpx>1</biostatCpx>
-	<biostatMet>0</biostatMet>
+	<biostatMet>1</biostatMet>
 	<displayOrderInCategory>438</displayOrderInCategory>
 	<iconPath>UI/Icons/Genes/Bernael_Gene_Nihilism</iconPath>
+</GeneDef>
+
+<GeneDef>
+	<defName>BX_Mastermind</defName>
+	<label>Mastermind</label>
+	<description>Enhance all psycaster stats</description>
+	<geneClass>Gene</geneClass>
+	<statFactors>
+		<MeditationFocusGain>1.3</MeditationFocusGain>
+		<PsychicEntropyMax>1.15</PsychicEntropyMax>
+	</statFactors>
+	<statOffsets>
+		<PsychicSensitivity>0.4</PsychicSensitivity>
+		<PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+	</statOffsets>
+	<exclusionTags>
+		<li>MeditationSpeed</li>
+		<li>PsychicEntropy</li>
+	</exclusionTags>
+	<biostatCpx>4</biostatCpx>
+	<biostatMet>0</biostatMet>
+	<biostatArc>1</biostatArc>
+	<displayOrderInCategory>438</displayOrderInCategory>
+	<iconPath>UI/Icons/Genes/Bernael_Gene_Nihilism</iconPath>
+			<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>psy</symbol>
+					<weight>3</weight>
+				</li>
+				<li>
+					<symbol>senso</symbol>
+				</li>
+				<li>
+					<symbol>sensi</symbol>
+				</li>
+			</prefixSymbols>
+		</symbolPack>
 </GeneDef>
 
 </Defs>
